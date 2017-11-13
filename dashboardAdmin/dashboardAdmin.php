@@ -1,8 +1,15 @@
+<?php
+
+require 'ayudaAdmin.php';
+
+ ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>dashboard</title>
+        <title>dashboard - Admin</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
@@ -32,139 +39,134 @@
 
           <!-- Copiar desde aqui -->
 
-            <!-- Top Bar Start -->
-            <div class="topbar">
+          <!-- Top Bar Start -->
+          <div class="topbar">
 
-                <!-- LOGO -->
-                <div class="topbar-left">
-                    <div class="">
-                        <a href="index.php" class="logo">
-                            <img src="assets/images/logo.png" alt="logo" class="logo-lg" />
-                            <img src="assets/images/logo_sm.png" alt="logo" class="logo-sm hidden" />
-                        </a>
-                    </div>
-                </div>
-
-
+              <!-- LOGO -->
+              <div class="topbar-left">
+                  <div class="">
+                      <a href="#" class="logo">
+                          <img src="assets/images/logo.png" alt="logo" class="logo-lg" />
+                          <img src="assets/images/logo_sm.png" alt="logo" class="logo-sm hidden" />
+                      </a>
+                  </div>
+              </div>
 
 
-                <!-- Top navbar -->
-                <div class="navbar navbar-default" role="navigation">
-                    <div class="container">
-                        <div class="">
-
-                            <!-- Mobile menu button -->
-                            <div class="pull-left">
-                                <button type="button" class="button-menu-mobile visible-xs visible-sm">
-                                    <i class="fa fa-bars"></i>
-                                </button>
-                                <span class="clearfix"></span>
-                            </div>
-
-                            <!-- Top nav left menu -->
-                            <ul class="nav navbar-nav hidden-sm hidden-xs top-navbar-items">
-                                <li><a href="ayuda.php">Ayuda</a></li>
-                            </ul>
-
-                            <!-- Top nav Right menu -->
-                            <ul class="nav navbar-nav navbar-right top-navbar-items-right pull-right">
-                                <li class="hidden-xs">
-                                    <!--<form role="search" class="navbar-left app-search pull-left">
-                                         <input type="text" placeholder="Search..." class="form-control">
-                                         <a href=""><i class="fa fa-search"></i></a>
-                                    </form>-->
 
 
-                                <li class="dropdown top-menu-item-xs">
-                                    <a href="" class="dropdown-toggle menu-right-item profile" data-toggle="dropdown" aria-expanded="true"><img src="perfil.jpg" alt="user-img" class="img-circle"> </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="perfil.php"><i class="ti-user m-r-10"></i> Perfil</a></li>
-                                        <li><a href="configuracion_perfil.php"><i class="ti-settings m-r-10"></i> Configuración del perfil</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="index.php"><i class="ti-power-off m-r-10"></i> Cerrar sesión</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div> <!-- end container -->
-                </div> <!-- end navbar -->
-            </div>
-            <!-- Top Bar End -->
+              <!-- Top navbar -->
+              <div class="navbar navbar-default" role="navigation">
+                  <div class="container">
+                      <div class="">
+
+                          <!-- Mobile menu button -->
+                          <div class="pull-left">
+                              <button type="button" class="button-menu-mobile visible-xs visible-sm">
+                                  <i class="fa fa-bars"></i>
+                              </button>
+                              <span class="clearfix"></span>
+                          </div>
 
 
-            <!-- Page content start -->
-            <div class="page-contentbar">
 
-                <!--left navigation start-->
-                <aside class="sidebar-navigation">
-                    <div class="scrollbar-wrapper">
-                        <div>
-                            <button type="button" class="button-menu-mobile btn-mobile-view visible-xs visible-sm">
-                                <i class="mdi mdi-close"></i>
-                            </button>
-                            <!-- User Detail box -->
-                            <div class="user-details">
-                                <div class="pull-left">
-                                    <img src="perfil.jpg" alt="" class="thumb-md img-circle">
-                                </div>
-                                <div class="user-info">
-                                    <a href="perfil.php">David Tovias Alanis</a>
-                                    <p class="text-muted m-0">Administrador</p>
-                                </div>
-                            </div>
-                            <!--- End User Detail box -->
-
-                            <!-- Left Menu Start -->
-                            <ul class="metisMenu nav" id="side-menu">
-                                <li><a href="dashboard.php"><i class="ti-home"></i> Dashboard </a></li>
+                          <!-- Top nav Right menu -->
+                          <ul class="nav navbar-nav navbar-right top-navbar-items-right pull-right">
+                              <li class="hidden-xs">
+                                  <!--<form role="search" class="navbar-left app-search pull-left">
+                                       <input type="text" placeholder="Search..." class="form-control">
+                                       <a href=""><i class="fa fa-search"></i></a>
+                                  </form>-->
 
 
-                                <li>
-                                    <a href="javascript: void(0);" aria-expanded="true"><i class="ti-light-bulb"></i> Partidos <span class="fa arrow"></span></a>
-                                    <ul class="nav-second-level nav" aria-expanded="true">
-                                        <li><a href="partidos_jugados.php">Subir cedula</a></li>
-                                        <li><a href="ubicacion.php">Ubicación</a></li>
-                                    </ul>
-                                </li>
+                              <li class="dropdown top-menu-item-xs">
+                                  <a href="" class="dropdown-toggle menu-right-item profile" data-toggle="dropdown" aria-expanded="true"><img src="admin.png" alt="user-img" class="img-circle"> </a>
+                                  <ul class="dropdown-menu">
+                                      <li><a href="../loginAdmin.php"><i class="ti-power-off m-r-10"></i> Cerrar sesión</a></li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </div>
+                  </div> <!-- end container -->
+              </div> <!-- end navbar -->
+          </div>
+          <!-- Top Bar End -->
 
 
-                                <li>
-                                    <a href="javascript: void(0);" aria-expanded="true"><i class="ti-menu-alt"></i> Torneo <span class="fa arrow"></span></a>
-                                    <ul class="nav-second-level nav" aria-expanded="true">
-                                        <li><a href="tabla_goleo.php">Tabla goleo individual</a></li>
-                                        <li><a href="tabla_general.php">Tabla general</a></li>
-                                        <li><a href="resultados.php">Resultados</a></li>
-                                    </ul>
-                                </li>
+          <!-- Page content start -->
+          <div class="page-contentbar">
+
+              <!--left navigation start-->
+              <aside class="sidebar-navigation">
+                  <div class="scrollbar-wrapper">
+                      <div>
+                          <button type="button" class="button-menu-mobile btn-mobile-view visible-xs visible-sm">
+                              <i class="mdi mdi-close"></i>
+                          </button>
+                          <!-- User Detail box -->
+                          <div class="user-details">
+                              <div class="pull-left">
+                                  <img src="admin.png" alt="" class="thumb-md img-circle">
+                              </div>
+                              <div class="user-info">
+                                  <a href="#">David Tovias Alanis</a>
+                                  <p class="text-muted m-0">Administrador</p>
+                              </div>
+                          </div>
+                          <!--- End User Detail box -->
+
+                          <!-- Left Menu Start -->
+                          <ul class="metisMenu nav" id="side-menu">
+                              <li><a href="dashboardAdmin.php"><i class="ti-home"></i> Dashboard </a></li>
 
 
-                                <li>
-                                    <a href="javascript: void(0);" aria-expanded="true"><i class="ti-files"></i> Estadisticas <span class="fa arrow"></span></a>
-                                    <ul class="nav-second-level nav" aria-expanded="true">
-                                        <li><a href="topten.php">Top Ten de equipos</a></li>
-                                    </ul>
-                                </li>
-
-                                <li>
-                                    <a href="equipos.php" aria-expanded="true"><i class="ti-files"></i> Equipos </a>
-                                </li>
+                              <li>
+                                  <a href="javascript: void(0);" aria-expanded="true"><i class="ti-flag-alt-2"></i> Partidos <span class="fa arrow"></span></a>
+                                  <ul class="nav-second-level nav" aria-expanded="true">
+                                      <li><a href="cedula.php">Subir cedula</a></li>
+                                      <li><a href="ubicacionAdmin.php">Ubicación</a></li>
+                                  </ul>
+                              </li>
 
 
-                                <li>
-                                    <a href="contactos.php" ><i class="ti-home"></i> Rol de juegos </a>
-                                </li>
+                              <li>
+                                  <a href="javascript: void(0);" aria-expanded="true"><i class="ti ti-cup"></i> Torneo <span class="fa arrow"></span></a>
+                                  <ul class="nav-second-level nav" aria-expanded="true">
+                                      <li><a href="tabla_goleo.php">Tabla goleo individual</a></li>
+                                      <li><a href="tabla_general.php">Tabla general</a></li>
+                                      <li><a href="resultados.php">Resultados</a></li>
+                                  </ul>
+                              </li>
 
 
-                                <li>
-                                  <a href="nuevo_administrador.php"><i class="ti-light-bulb"></i> Crear nuevo administrador</a>
-                                </li>
+                              <li>
+                                  <a href="javascript: void(0);" aria-expanded="true"><i class="ti-stats-up"></i> Estadisticas <span class="fa arrow"></span></a>
+                                  <ul class="nav-second-level nav" aria-expanded="true">
+                                      <li><a href="topten.php">Top Ten de equipos</a></li>
+                                  </ul>
+                              </li>
+
+                              <li>
+                                  <a href="baja_equipo.php" aria-expanded="true"><i class="ti ti-arrow-down"></i> Dar de baja un equipo </a>
+                              </li>
 
 
-                            </ul>
-                        </div>
-                    </div><!--Scrollbar wrapper-->
-                </aside>
-                <!--left navigation end-->
+                              <li>
+                                  <a href="rol.php" ><i class="ti-flag"></i> Rol de juegos </a>
+                              </li>
+
+                              <li><a href="cambiar_contrasena.php"><i class="ti-settings"></i> Cambiar contraseña </a></li>
+
+                              <li>
+                                <a href="nuevo_administrador.php"><i class="ti ti-id-badge"></i> Crear nuevo administrador</a>
+                              </li>
+
+
+                          </ul>
+                      </div>
+                  </div><!--Scrollbar wrapper-->
+              </aside>
+              <!--left navigation end-->
 
                 <!-- Copiar hasta aqui -->
 
@@ -177,12 +179,34 @@
 							<div class="col-sm-12">
 								<div class="card-box widget-inline">
 									<div class="row">
+
 										<div class="col-lg-3 col-sm-6">
 											<div class="widget-inline-box text-center">
-												<h3 class="m-t-10"><i class="text-primary mdi mdi-access-point-network"></i> <b data-plugin="counterup">20</b></h3>
-												<p class="text-muted">Numero de equipos</p>
+												<h3 class="m-t-10"><i class="text-primary mdi mdi-soccer"></i> <b data-plugin="counterup"></b></h3>
+												<p class="text-muted"></p>
 											</div>
-										</div>							
+										</div>
+
+                    <div class="col-lg-3 col-sm-6">
+											<div class="widget-inline-box text-center">
+												<h3 class="m-t-10"><i class="text-custom mdi mdi-tshirt-crew"></i> <b data-plugin="counterup">20</b></h3>
+												<p class="text-muted">Número de equipos</p>
+											</div>
+										</div>
+
+                    <div class="col-lg-3 col-sm-6">
+											<div class="widget-inline-box text-center">
+												<h3 class="m-t-10"><i class="text-custom mdi mdi-tshirt-v"></i> <b data-plugin="counterup">50</b></h3>
+												<p class="text-muted">Número de partidos jugados</p>
+											</div>
+										</div>
+
+                    <div class="col-lg-3 col-sm-6">
+											<div class="widget-inline-box text-center">
+												<h3 class="m-t-10"><i class="text-primary mdi mdi-soccer"></i> <b data-plugin="counterup"></b></h3>
+												<p class="text-muted"></p>
+											</div>
+										</div>
 
 
 									</div>
@@ -192,7 +216,26 @@
                         <!--end row -->
 
 
-
+                        <div class="card-box p-b-0">
+                            <a href="javascript:;" class="center-block text-center text-dark">
+                                <img src="porteria.jpg" class="thumb-xl img-thumbnail img-circle" alt="">
+                                <div class="h5 m-b-0"><strong>Torneo Intramuros UPV</strong></div>
+                            </a>
+                            <div class="bg-custom pull-in-card p-20 widget-box-two m-b-0 m-t-30 list-inline text-center row">
+                                <div class="col-xs-4">
+                                    <h4 class="text-white m-0 font-600">150</h4>
+                                    <p class="text-white m-b-0">Total de goles</p>
+                                </div>
+                                <div class="col-xs-4">
+                                    <h4 class="text-white m-0 font-600">3</h4>
+                                    <p class="text-white m-b-0">Promedio goles por partido</p>
+                                </div>
+                                <div class="col-xs-4">
+                                    <h4 class="text-white m-0 font-600">Atletico de Madrid</h4>
+                                    <p class="text-white m-b-0">Líder general</p>
+                                </div>
+                            </div>
+                        </div>
 
 
 
@@ -302,12 +345,82 @@
                         </div>
 
 
+                        <div class="p-t-50 m-b-20">
+
+
+
+                            <div class="button-list">
+                              <button class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#accordion-modal">Ayuda</button>
+                              <!-- Panel modal -->
+
+                            </div>
+
+
+                            <div id="accordion-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                <div class="modal-dialog">
+                                    <div class="modal-content p-0">
+                                        <div class="panel-group panel-group-joined" id="accordion-test">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-test" href="#collapseOne" class="collapsed">
+                                                            Menú Principal
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseOne" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <?php dashboardAdmin(1); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-test" href="#collapseTwo">
+                                                            Contenido
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseTwo" class="panel-collapse collapse in">
+                                                    <div class="panel-body">
+                                                        <?php dashboardAdmin(2) ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion-test" href="#collapseThree" class="collapsed">
+                                                            Cerrar sesión
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseThree" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                      <?php dashboardAdmin(3); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dialog -->
+                            </div><!-- /.modal -->
+
+
+
+                        </div>
+                        <!-- end Modal section -->
+
+
+
+
                     </div>
                     <!-- end container -->
 
                     <div class="footer">
                         <div class="pull-right hidden-xs">
-                            Project Completed <strong class="text-custom">39%</strong>.
+                            Project Completed <strong class="text-custom"></strong>.
                         </div>
                         <div>
                             <strong>Simple Admin</strong> - Copyright &copy; 2017

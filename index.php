@@ -35,8 +35,8 @@
                             <div class="m-t-40 card-box">
                                 <div class="text-center">
                                     <h2 class="text-uppercase m-t-0 m-b-30">
-                                        <a href="index.html" class="text-success">
-                                            <span><img src="logo_jaguar.jpg" alt="" height="100"></span>
+                                        <a href="index.php" class="text-success">
+                                            <span><img src="dashboard/logo_jaguar.jpg" alt="" height="100"></span>
                                         </a>
                                     </h2>
                                     <!--<h4 class="text-uppercase font-bold m-b-0">Sign In</h4>-->
@@ -53,7 +53,7 @@
 
                                         <div class="form-group m-b-20">
                                             <div class="col-xs-12">
-                                                <a href="loginadmin.php" class="text-muted pull-right font-14">ingresar como administrador</a>
+                                                <a href="contrasena.php" class="text-muted pull-right font-14">¿Olvidaste tu contraseña?</a>
                                                 <label for="password">Contraseña</label>
                                                 <input class="form-control" type="password" required="" id="password" placeholder="Ingresa tu contraseña">
                                             </div>
@@ -79,7 +79,9 @@
                             <div class="row m-t-50">
                                 <div class="col-sm-12 text-center">
                                     <p class="text-muted">¿No tienes una cuenta? <a href="registro.php" class="text-dark m-l-5">Registrate</a></p>
+                                    <p class="text-muted"><a href="loginadmin.php" class="text-dark m-l-5">Ingresar como administrador</a></p>
                                 </div>
+
                             </div>
 
                         </div>

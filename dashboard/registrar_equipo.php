@@ -1,8 +1,15 @@
+<?php
+
+require 'ayudaAlumno.php';
+
+ ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>SimpleAdmin - Responsive Admin Dashboard Template</title>
+        <title>Registrar equipo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
@@ -32,7 +39,7 @@
               <!-- LOGO -->
               <div class="topbar-left">
                   <div class="">
-                      <a href="index.php" class="logo">
+                      <a href="#" class="logo">
                           <img src="assets/images/logo.png" alt="logo" class="logo-lg" />
                           <img src="assets/images/logo_sm.png" alt="logo" class="logo-sm hidden" />
                       </a>
@@ -55,10 +62,7 @@
                               <span class="clearfix"></span>
                           </div>
 
-                          <!-- Top nav left menu -->
-                          <ul class="nav navbar-nav hidden-sm hidden-xs top-navbar-items">
-                              <li><a href="ayuda.php">Ayuda</a></li>
-                          </ul>
+
 
                           <!-- Top nav Right menu -->
                           <ul class="nav navbar-nav navbar-right top-navbar-items-right pull-right">
@@ -85,7 +89,7 @@
                                                    <div class="media-body">
                                                       <h5 class="media-heading">Atletico de Madrid vs AS Roma</h5>
                                                       <p class="m-0">
-                                                          <small>Viernes 10 Noviembre 2017 3:00p.m</small>
+                                                          <small>Martes 14 Noviembre 2017 3:00p.m</small>
                                                       </p>
                                                    </div>
                                                 </div>
@@ -102,12 +106,12 @@
                               </li>
 
                               <li class="dropdown top-menu-item-xs">
-                                  <a href="" class="dropdown-toggle menu-right-item profile" data-toggle="dropdown" aria-expanded="true"><img src="perfil.jpg" alt="user-img" class="img-circle"> </a>
+                                  <a href="" class="dropdown-toggle menu-right-item profile" data-toggle="dropdown" aria-expanded="true"><img src="usuario.png" alt="user-img" class="img-circle"> </a>
                                   <ul class="dropdown-menu">
                                       <li><a href="perfil.php"><i class="ti-user m-r-10"></i> Perfil</a></li>
                                       <li><a href="configuracion_perfil.php"><i class="ti-settings m-r-10"></i> Configuración del perfil</a></li>
                                       <li class="divider"></li>
-                                      <li><a href="login.php"><i class="ti-power-off m-r-10"></i> Cerrar sesión</a></li>
+                                      <li><a href="../index.php"><i class="ti-power-off m-r-10"></i> Cerrar sesión</a></li>
                                   </ul>
                               </li>
                           </ul>
@@ -131,11 +135,11 @@
                           <!-- User Detail box -->
                           <div class="user-details">
                               <div class="pull-left">
-                                  <img src="perfil.jpg" alt="" class="thumb-md img-circle">
+                                  <img src="usuario.png" alt="" class="thumb-md img-circle">
                               </div>
                               <div class="user-info">
                                   <a href="perfil.php">David Tovias Alanis</a>
-                                  <p class="text-muted m-0">Cuenta</p>
+                                  <p class="text-muted m-0">Cuenta - jugador</p>
                               </div>
                           </div>
                           <!--- End User Detail box -->
@@ -147,7 +151,7 @@
 
 
                               <li>
-                                  <a href="javascript: void(0);" aria-expanded="true"><i class="ti-light-bulb"></i> Partidos <span class="fa arrow"></span></a>
+                                  <a href="javascript: void(0);" aria-expanded="true"><i class="ti-flag-alt-2"></i> Partidos <span class="fa arrow"></span></a>
                                   <ul class="nav-second-level nav" aria-expanded="true">
                                       <li><a href="partidos_jugados.php">Partidos jugados</a></li>
                                       <li><a href="ubicacion.php">Ubicación</a></li>
@@ -156,33 +160,42 @@
                               </li>
 
                               <li>
-                                  <a href="javascript: void(0);" aria-expanded="true"><i class="ti-files"></i> Mi equipo <span class="fa arrow"></span></a>
+                                  <a href="javascript: void(0);" aria-expanded="true"><i class="ti ti-basketball"></i> Mi equipo <span class="fa arrow"></span></a>
                                   <ul class="nav-second-level nav" aria-expanded="true">
-                                      <li><a href="goles_equipo.php">Goleo individual de mi equipo</a></li>
-                                      <li><a href="registrar_equipo.php">Registrar equipo</a></li>
+                                      <li><a href="goles_equipo.php">Goleo individual</a></li>
+                                      <li><a href="graficas.php">Gráficas</a></li>
+                                      <li><a href="alta_alumno.php">Agregar jugador</a></li>
+                                      <li><a href="baja_alumno.php">Dar de baja jugador</a></li>
                                   </ul>
                               </li>
 
 
                               <li>
-                                  <a href="javascript: void(0);" aria-expanded="true"><i class="ti-menu-alt"></i> Torneo <span class="fa arrow"></span></a>
+                                  <a href="javascript: void(0);" aria-expanded="true"><i class="ti-cup"></i> Torneo <span class="fa arrow"></span></a>
                                   <ul class="nav-second-level nav" aria-expanded="true">
                                       <li><a href="tabla_goleo.php">Tabla goleo individual</a></li>
                                       <li><a href="tabla_general.php">Tabla general</a></li>
+                                      <li><a href="resultados.php">Resultados última jornada</a></li>
                                   </ul>
                               </li>
 
 
                               <li>
-                                  <a href="javascript: void(0);" aria-expanded="true"><i class="ti-files"></i> Estadisticas <span class="fa arrow"></span></a>
+                                  <a href="javascript: void(0);" aria-expanded="true"><i class="ti-stats-up"></i> Estadisticas <span class="fa arrow"></span></a>
                                   <ul class="nav-second-level nav" aria-expanded="true">
                                       <li><a href="topten.php">Top Ten de equipos</a></li>
                                   </ul>
                               </li>
 
                               <li>
-                                  <a href="contactos.php" ><i class="ti-home"></i> Contactos </a>
+                                  <a href="contactos.php" ><i class="ti ti-face-smile"></i> Contactos </a>
                               </li>
+
+
+                              <li>
+                                <a href="registrar_equipo.php"><i class="ti ti-thumb-up"></i> Registrar mi equipo</a>
+                              </li>
+
 
                           </ul>
                       </div>
@@ -198,33 +211,66 @@
                             <div class="col-sm-12">
                                 <h4 class="m-b-20 header-title">Registro de equipo</h4>
 
+
                                 <div class="row">
-                                  <div class="form-group">
-                                      <label class="col-sm-2 control-label">Número de jugadores</label>
-                                      <div class="col-sm-10">
-                                          <select class="form-control">
-                                              <option>6</option>
-                                              <option>7</option>
-                                              <option>8</option>
-                                              <option>9</option>
-                                              <option>10</option>
-                                              <option>11</option>
-                                              <option>12</option>
-                                              <option>13</option>
-                                          </select>
-                                      </div>
-                                  </div>
-                                    <div class="col-md-6">
+                                  <h5>Empieza tu equipo con 6 jugadores. Ingresa también
+                                     el nombre de tu equipo</h5>
+
+                                  <br>
+
                                         <form class="form-horizontal" role="form">
+                                          <div class="form-group">
+                                            <br>
+                                              <label class="col-md-2 control-label">Nombre del equipo: </label>
+                                              <div class="col-md-10">
+                                                  <input type="text" class="form-control" placeholder="Ingresa el nombre del equipo">
+                                              </div>
+                                          </div>
+                                          <br>
                                             <div class="form-group">
                                               <br>
                                                 <label class="col-md-2 control-label">Matricula: </label>
                                                 <div class="col-md-10">
-                                                    <input type="text" class="form-control" value="Some text value...">
+                                                    <input type="text" class="form-control" placeholder="Ingresa la matrícula del jugador">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                              <br>
+                                                <label class="col-md-2 control-label">Matricula: </label>
+                                                <div class="col-md-10">
+                                                    <input type="text" class="form-control" placeholder="Ingresa la matrícula del jugador">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                              <br>
+                                                <label class="col-md-2 control-label">Matricula: </label>
+                                                <div class="col-md-10">
+                                                    <input type="text" class="form-control" placeholder="Ingresa la matrícula del jugador">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                              <br>
+                                                <label class="col-md-2 control-label">Matricula: </label>
+                                                <div class="col-md-10">
+                                                    <input type="text" class="form-control" placeholder="Ingresa la matrícula del jugador">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                              <br>
+                                                <label class="col-md-2 control-label">Matricula: </label>
+                                                <div class="col-md-10">
+                                                    <input type="text" class="form-control" placeholder="Ingresa la matrícula del jugador">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                              <br>
+                                                <label class="col-md-2 control-label">Matricula: </label>
+                                                <div class="col-md-10">
+                                                    <input type="text" class="form-control" placeholder="Ingresa la matrícula del jugador">
                                                 </div>
                                             </div>
                                         </form>
-                                    </div>
+
 
                                 </div>
                                 <!-- end row -->
@@ -233,19 +279,53 @@
 
                           </div>
                                 <!-- end row -->
-                          <button type="button" class="btn btn-success">Registrar equipo</button>
+
+                          <button type="submit" class="btn btn-success">Registrar equipo</button>
 
                             </div> <!-- end col -->
+                            <br>
+                            <br>
+
+
+                            <div class="p-t-50 m-b-20">
+                                <div class="button-list">
+                                &nbsp;&nbsp;&nbsp;&nbsp;  <button class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#panel-modal">Ayuda</button>
+                                </div>
+
+
+                                <div id="panel-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content p-0 b-0">
+                                            <div class="panel panel-color panel-primary">
+                                                <div class="panel-heading">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                    <h3 class="panel-title">Ayuda</h3>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <p><?php registrarEquipo() ?></p>
+                                                </div>
+                                            </div>
+                                        </div><!-- /.modal-content -->
+                                    </div><!-- /.modal-dialog -->
+                                </div><!-- /.modal -->
+
+                            </div>
+                            <!-- end Modal section -->
+
                         </div> <!-- end row -->
+
+
+
+
                     </div>
                     <!-- end container -->
 
                     <div class="footer">
                         <div class="pull-right hidden-xs">
-                            Project Completed <strong class="text-custom">39%</strong>.
+                            Project Completed <strong class="text-custom"></strong>.
                         </div>
                         <div>
-                            <strong>Simple Admin</strong> - Copyright &copy; 2017
+                            <strong>Torneo Intramuros</strong> - Copyright &copy; 2017
                         </div>
                     </div> <!-- end footer -->
 
