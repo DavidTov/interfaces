@@ -35,8 +35,8 @@
                             <div class="m-t-40 card-box">
                                 <div class="text-center">
                                     <h2 class="text-uppercase m-t-0 m-b-30">
-                                        <a href="index.html" class="text-success">
-                                            <span><img src="logo_jaguar.jpg" alt="" height="100"></span>
+                                        <a href="index.php" class="text-success">
+                                            <span><img src="dashboard/logo_jaguar.jpg" alt="" height="100"></span>
                                         </a>
                                     </h2>
                                     <!--<h4 class="text-uppercase font-bold m-b-0">Sign In</h4>-->
@@ -110,7 +110,7 @@
 
                                         <div class="form-group account-btn text-center m-t-10">
                                             <div class="col-xs-12">
-                                                <button class="btn btn-lg btn-primary btn-block" type="submit" href="login.php">Registrarse</button>                                                
+                                                <button class="btn btn-lg btn-primary btn-block" type="submit" href="login.php">Registrarse</button>
                                             </div>
                                         </div>
 
